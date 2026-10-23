@@ -1,0 +1,20 @@
+{
+  "name": "taskflow-mern",
+  "version": "1.0.0",
+  "description": "Production-grade MERN Stack Task Management Application with TaskFlow UI",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "cd backend && npm run seed",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["mern", "task-management", "kanban", "taskflow"],
+  "author": "Ratnesh C.",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
